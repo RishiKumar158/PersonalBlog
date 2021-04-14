@@ -1,0 +1,130 @@
+.jumbotron{
+color: white;
+font-size: 24px;
+background-image: url("https://images.unsplash.com/photo-1503455637927-730bce8583c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+body{
+margin: 0;
+padding: 0;
+font-family: montserrat;
+background-image: url("https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#lr_edits{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+background: white;
+border-radius: 10px;
+}
+
+#lr_edits h1{
+text-align: center;
+padding: 0 0 20px 0;
+border-bottom: 1px solid silver;
+}
+
+#lr_edits form{
+padding: 0 40px;
+box-sizing: border-box;
+}
+
+#lr_edits form .txt_field{
+position: relative;
+border-bottom: 2px solid #adadad;
+margin: 30px 0;
+}
+
+.func-control{
+width: 100%;
+padding 0 5px;
+height: 40px;
+font-size: 16px;
+border: none;
+background: none;
+outline: none;
+}
+
+.label-control{
+position: absolute;
+top: 50%;
+left: 5px;
+color: #adadad;
+transform: translateY(-50%);
+font-size: 16px;
+pointer-events: none;
+transition: .5s;
+}
+
+.txt_field span::before{
+content: '';
+position: absolute;
+top: 40px;
+left: 0;
+width: 0%;
+height: 2px;
+background: #2691d9;
+transition: .5s;
+}
+
+.func-control:focus ~ .label-control,
+.func-control:valid ~ .label-control{
+top: -5px;
+color: #2691d9;
+}
+
+.func-control:focus ~ span::before,
+.func-control:valid ~ span::before{
+width: 100%;
+}
+
+.pass{
+margin: -5px 0 20px 5px;
+color: #a6a6a6;
+cursor: pointer;
+}
+
+.pass:hover{
+text-decoration: underline;
+}
+
+.submit-control{
+width: 100%;
+height: 50px;
+border: 1px solid;
+background: #2691d9;
+border-radius: 25px;
+font-size: 18px;
+color: #e9f4fb;
+font-weight: 700;
+cursor: pointer;
+outline: none;
+}
+
+.submit-control:hover{
+border-color: #2691d9;
+transition: .5s;
+}
+
+.signup_link{
+margin: 30px 0;
+text-align: center;
+font-size: 16px;
+color: #666666;
+}
+
+.signup_link a{
+color: #2691d9;
+text-decoration: none;
+}
+
+.signup_link a:hover{
+text-decoration: underline;
+}

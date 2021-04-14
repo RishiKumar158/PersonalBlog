@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="center" id="lr_edits">
+    <h1>Register</h1>
+    <form method="post">
+        {{form.hidden_tag()}}
+        <div class="txt_field">
+            {{form.email(class="func-control")}}
+            <span></span>
+            {{form.email.label(class="label-control")}}
+        </div>
+        <div class="txt_field">
+            {{form.username(class="func-control")}}
+            <span></span>
+            {{form.username.label(class="label-control")}}
+        </div>
+        <div class="txt_field">
+            {{form.password(class="func-control")}}
+            <span></span>
+            {{form.password.label(class="label-control")}}
+        </div>
+        <div class="txt_field">
+            {{form.pass_confirm(class="func-control")}}
+            <span></span>
+            {{form.pass_confirm.label(class="label-control")}}
+        </div>
+        {{form.submit(class="submit-control")}}
+    </form>
+</div>
+
+{% endblock %}
+
+
+<form method="post">
+    {{form.hidden_tag()}}
+    {{form.email.label}} {{form.email()}}<br>
+    {{form.username.label}} {{form.username()}}<br>
+    {{form.password.label}} {{form.password()}}<br>
+    {{form.pass_confirm.label}} {{form.pass_confirm()}}<br>
+    {{form.submit()}}
+</form>

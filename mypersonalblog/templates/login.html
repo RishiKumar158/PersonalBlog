@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="center" id="lr_edits">
+    <h1>Login</h1>
+    <form method="post">
+        {{form.hidden_tag()}}
+        <div class="txt_field">
+            {{form.email(class="func-control")}}
+            <span></span>
+            {{form.email.label(class="label-control")}}
+        </div>
+        <div class="txt_field">
+            {{form.password(class="func-control")}}
+            <span></span>
+            {{form.password.label(class="label-control")}}
+        </div>
+        <div class="pass">Forgot Password?</div>
+        {{form.submit(class="submit-control")}}
+        <div class="signup_link">
+           Not a Member? <a href="#">SignUp</a>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
+
+
